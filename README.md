@@ -30,14 +30,14 @@ Once blackbeard has collected its data, it beacons the data back as query argume
 ######Sounds good, how do I implement blackbeard.js on my page?
 It's as simple as adding something like the following at the top of the HEAD tag of your page:
 
-`
+```
     <script>BB_start = new Date().getTime();</script>
     <script src="js/blackbeard.js"></script>.
     <script>
       BB.config.beaconurl = "http://www.mysite.com/http204.gif";
       BB.init();
     </script>
-`
+```
 Tutorials on advanced usage and analyzing the data will be coming soon!
 
 
