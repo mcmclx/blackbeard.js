@@ -15,7 +15,7 @@
 
   --------------------------------
 
-  blackbeard.js - RUM for scalawags
+  blackbeard.js - RUM for Mateys
   v0.1
 */
 
