@@ -62,12 +62,12 @@ var BB = function() {
       return;
     }
     _attribs[key] = value;
-  };
+  }
 
   // Public method to get all attributes
   function getAttribs() {
     return _attribs;
-  };
+  }
 
   // Initialize!
   function init() {
@@ -226,7 +226,7 @@ var BB = function() {
         } else if (performance.timing.loadEventEnd <= 0) {
           setTimeout(checkNavTiming, 100);
         }
-      }
+      };
 
       checkNavTiming();
 
@@ -242,13 +242,13 @@ var BB = function() {
 
     for (var k in _measures) {
       if (_measures.hasOwnProperty(k)) {
-        beaconString += "&" + escape(k) + "=" + ("undefined" == typeof(_measures[k]) ? "" : _measures[k]); 
+        beaconString += "&" + escape(k) + "=" + ("undefined" === typeof(_measures[k]) ? "" : _measures[k]); 
       }
     }
 
     for (var k in _attribs) {
       if (_attribs.hasOwnProperty(k)) {
-        beaconString += "&" + escape(k) + "=" + ("undefined" == typeof(_attribs[k]) ? "" : _attribs[k]); 
+        beaconString += "&" + escape(k) + "=" + ("undefined" === typeof(_attribs[k]) ? "" : _attribs[k]); 
       }
     }
 
